@@ -12,13 +12,6 @@ Stampare in HTML una lista con eta inserità, km inseriti ed il prezzo finale
 eta: 50
 km: 120
 prezzzo: 24,50
-
-BONUS:
-validare/ controllare i dati inseriti
-età è un numero?
-età è stata inserita
-km è un numero valido?
-posso inserire un minimo / massimo di km possibili?
 */
 
 const km = prompt("Quanti km vuoi percorrere?");
