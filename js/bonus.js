@@ -21,10 +21,12 @@ km è un numero valido?
 posso inserire un minimo / massimo di km possibili?
 */
 
+// Assegnazione variabili a elementi HTML
 let docKm = document.getElementById("span-km");
 let docAge = document.getElementById("span-age");
 const docPrice = document.getElementById("span-price");
 
+// Kilometri che l'utente vuole percorrere
 let km = prompt("Quanti km vuoi percorrere?");
 docKm.innerHTML = km;
 
@@ -41,10 +43,12 @@ if (isNaN(km)) {
   docKm.innerHTML = "numero troppo grande";
 }
 
+// Prezzo senza sconti e sconti
 let price = km * 0.21;
 const discountUnder18 = price / 100 * 20;
 const discountOver65 = price / 100 * 40;
 
+// Età dell'utente
 let age = prompt("Quanti anni hai?");
 docAge.innerHTML = age;
 
@@ -60,4 +64,5 @@ if (isNaN(age) || age <= 0) {
   alert("Hai diritto a uno sconto del 40%");
 }
 
+// Prezzo finale
 docPrice.innerHTML = `${price.toFixed(2)}€`;
