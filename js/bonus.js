@@ -21,7 +21,7 @@ km è un numero valido?
 posso inserire un minimo / massimo di km possibili?
 */
 
-// Assegnazione variabili a elementi HTML
+// Assegnazione elementi HTML a variabili
 let docKm = document.getElementById("span-km");
 let docAge = document.getElementById("span-age");
 const docPrice = document.getElementById("span-price");
