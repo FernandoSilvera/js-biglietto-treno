@@ -52,7 +52,7 @@ const discountOver65 = price / 100 * 40;
 let age = Math.floor(prompt("Quanti anni hai?"));
 docAge.innerHTML = age;
 
-if (isNaN(age) || age <= 0 || age > 1) {
+if (isNaN(age) || age <= 0 || age > 125) {
   age = null;
   alert("L'età inserita non è valida, non verranno applicati sconti.");
   docAge.innerHTML = "sconosciuta";
