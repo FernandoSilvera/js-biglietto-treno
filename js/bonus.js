@@ -49,10 +49,10 @@ const discountUnder18 = price / 100 * 20;
 const discountOver65 = price / 100 * 40;
 
 // Età dell'utente
-let age = prompt("Quanti anni hai?");
+let age = Math.floor(prompt("Quanti anni hai?"));
 docAge.innerHTML = age;
 
-if (isNaN(age) || age <= 0) {
+if (isNaN(age) || age <= 0 || age > 1) {
   age = null;
   alert("L'età inserita non è valida, non verranno applicati sconti.");
   docAge.innerHTML = "sconosciuta";

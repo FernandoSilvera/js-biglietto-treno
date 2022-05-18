@@ -22,7 +22,7 @@ posso inserire un minimo / massimo di km possibili?
 */
 
 const km = prompt("Quanti km vuoi percorrere?");
-const age = prompt("Quanti anni hai?");
+const age = Math.floor(prompt("Quanti anni hai?"));
 let price = km * 0.21;
 const discountUnder18 = price / 100 * 20;
 const discountOver65 = price / 100 * 40;
